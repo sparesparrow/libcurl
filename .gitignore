@@ -72,3 +72,11 @@ libstandaloneengine.a
 tests/string
 tests/config
 tests/ech-log/
+
+# Conan
+.conan/
+.conan2/
+conan.lock
+conanbuildinfo.*
+CMakePresets.json
+CMakeUserPresets.json
