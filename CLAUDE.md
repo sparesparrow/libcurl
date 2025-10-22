@@ -100,3 +100,40 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake
 
 
 
+**Role:** 🌐 Integration Testing
+
+Example consumer project testing OpenSSL Conan integration
+
+## Architecture Position
+
+**Layer:** Consumer (Depends on domain layer)
+**Dependencies:**
+- openssl/4.0.3 (requires)
+**Consumers:** HTTP/TLS applications
+
+## Key Files
+
+- `conanfile.txt`: Depends on openssl/4.0.3
+- `CMakeLists.txt`: CMake build configuration
+- Integration tests for HTTP/TLS functionality
+
+## Quick Start
+
+```bash
+# Clone repository (if not in workspace)
+git clone https://github.com/sparesparrow/libcurl.git
+
+# Navigate to directory
+cd libcurl
+
+# Install dependencies
+conan install . --build=missing
+```
+
+## Related Documentation
+
+- [Main Architecture Diagram](../architecture-diagram.md)
+- [Workspace Overview](../README.md)
+- [Conan Integration Guide](../docs/conan-extensions-diagram.md)
+
+---
