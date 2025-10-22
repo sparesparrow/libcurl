@@ -18,6 +18,15 @@
 *.orig
 *.rej
 *~
+
+# Conan generated files
+*.cmake
+conan*.sh
+deactivate_*.sh
+conan*.txt
+conanbuild/
+conanrun/
+CMakeUserPresets.json
 .*.sw?
 .cproject
 .deps
@@ -80,3 +89,4 @@ conan.lock
 conanbuildinfo.*
 CMakePresets.json
 CMakeUserPresets.json
+cmakedeps_macros.cmake
